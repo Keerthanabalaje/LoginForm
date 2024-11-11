@@ -1,7 +1,8 @@
 // src/components/LoginPage.js
 import React from 'react';
 import './LoginPage.css';
-import loginImage from './assets/login-image.jpg'; // Import the image
+import loginImage from '../assets/Image.jpeg'; // Import the image
+import Login from './Login'
 
 const LoginPage = () => {
   return (
@@ -14,7 +15,8 @@ const LoginPage = () => {
           }}
         ></div>
         <div className="login-form">
-          <h2>Login</h2>
+          
+          <Login/>
           {/* Form content goes here */}
         </div>
       </div>
