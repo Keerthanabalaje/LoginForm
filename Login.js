@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setUsername, setPassword } from '../redux/actions';
-import './LoginPage.css';  // Ensure you're importing the CSS
 
 const Login = () => {
   const dispatch = useDispatch();
@@ -20,10 +19,9 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setDisplayedUsername(username); // Store username for displaying after submission
+    setDisplayedUsername(username); 
     setSubmitted(true);
 
-    // Clear the input fields by resetting Redux state
     dispatch(setUsername(''));
     dispatch(setPassword(''));
   };
@@ -53,7 +51,6 @@ const Login = () => {
         <button type="submit">Login</button>
       </form>
 
-      {/* Display success message after submission */}
       {submitted && (
         <div>
           <h3>Login Successful!</h3>
