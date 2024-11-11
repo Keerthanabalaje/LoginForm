@@ -1,1 +1,35 @@
+/* Layout for the login page */
+.login-page {
+  display: flex;
+  height: 100vh;
+}
 
+/* Left side image container */
+.login-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+
+.login-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Right side login form container */
+.login-form {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.login-form form {
+  width: 100%;
+  max-width: 400px;
+}
