@@ -1,21 +1,16 @@
 // src/components/LoginPage.js
 import React from 'react';
-import Login from './Login';
-import './LoginPage.css';
+import Login from './Login'; // Import Login component
+import './LoginPage.css'; // Import the CSS for styling
 
 const LoginPage = () => {
   return (
-    <div className="login-page">
-      {/* Left side image */}
-      <div className="login-image">
-        <img
-          src="https://via.placeholder.com/400" // Replace with your image URL
-          alt="Login Illustration"
-        />
-      </div>
+    <div className="container">
+      <div className="login-wrapper">
+        {/* Left side image */}
+        <div className="login-image"></div>
 
-      {/* Right side login form */}
-      <div className="login-form">
+        {/* Right side login form */}
         <Login />
       </div>
     </div>
