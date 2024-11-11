@@ -1,35 +1,108 @@
-/* Layout for the login page */
-.login-page {
+/* General container to center everything */
+.container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
+  background-color: #f4f7fc;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Wrapper for the login form and image */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 80%;
+  max-width: 1000px;
 }
 
 /* Left side image container */
 .login-image {
   flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f0f0f0;
+  background-image: url("/images/login-image.jpg"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  height: 100%;
 }
 
-.login-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-/* Right side login form container */
+/* Right side form container */
 .login-form {
   flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background-color: #ffffff;
+  padding: 40px;
+  max-width: 400px;
+  width: 100%;
 }
 
-.login-form form {
+/* Form heading */
+h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input field styling */
+input {
   width: 100%;
-  max-width: 400px;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Success message styling */
+h3 {
+  color: #4CAF50;
+  text-align: center;
+  margin-top: 20px;
+}
+
+p {
+  text-align: center;
+  color: #333;
+  font-size: 18px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .login-wrapper {
+    flex-direction: column;
+  }
+
+  .login-image {
+    height: 200px;
+  }
 }
